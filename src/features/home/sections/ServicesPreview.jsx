@@ -1,57 +1,133 @@
-import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
-
 const services = [
-  { title: "Root Canal", desc: "Painless laser-assisted therapy to save teeth.", icon: "🦷" },
-  { title: "Dental Implants", desc: "Life-long permanent solutions for tooth loss.", icon: "💎" },
-  { title: "Teeth Whitening", desc: "Professional brightening for a radiant glow.", icon: "✨" },
-  { title: "Smile Design", desc: "Aesthetic makeovers tailored to your face.", icon: "🎨" },
-  { title: "Orthodontics", desc: "Clear aligners and braces for perfect alignment.", icon: "📏" },
-  { title: "Child Dentistry", desc: "Friendly care to keep little smiles healthy.", icon: "👶" },
+  {
+    title: "Tooth Pain",
+    desc: "Immediate relief for sensitivity or severe pain",
+    message: "Hi, I am experiencing tooth pain. Can I get consultation?"
+  },
+  {
+    title: "Teeth Cleaning",
+    desc: "Professional cleaning for a healthier smile",
+    message: "Hi, I want to know about teeth cleaning."
+  },
+  {
+    title: "Braces & Alignment",
+    desc: "Straighten your teeth with modern solutions",
+    message: "Hi, I want to know about braces or alignment."
+  },
+  {
+    title: "Dental Implants",
+    desc: "Permanent solution for missing teeth",
+    message: "Hi, I want to know about dental implants."
+  },
+  {
+    title: "Cosmetic Dentistry",
+    desc: "Enhance your smile with whitening and veneers",
+    message: "Hi, I want to know about cosmetic dentistry options."
+  },
+  {
+    title: "General Consultation",
+    desc: "Routine check-up and expert guidance",
+    message: "Hi, I would like a general dental consultation."
+  },
 ];
 
 export default function ServicesPreview() {
   return (
-    <section className="py-32 bg-[#FAFAF8] px-6">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-8">
-          <div className="max-w-2xl">
-            <span className="text-accent font-bold uppercase tracking-[0.3em] text-[10px] mb-4 block">Specialized Care</span>
-            <h2 className="text-5xl md:text-6xl font-heading text-primary leading-tight">
-              Clinical Excellence <br />Meeting Premium Comfort.
-            </h2>
-          </div>
-          <Link href="/services" className="group flex items-center gap-3 text-primary font-bold border-b-2 border-primary pb-1 hover:text-accent hover:border-accent transition-all">
-            View All Services <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-          </Link>
+    <section className="py-24 px-6 bg-white">
+      <div className="max-w-6xl mx-auto">
+
+        {/* Header */}
+        <div className="mb-12 text-center">
+          <h2 className="text-4xl md:text-5xl font-heading text-primary mb-4">
+            Tell us your concern
+          </h2>
+          <p className="text-gray-500">
+            Select your concern and speak directly with our team.
+          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((s, i) => (
-            <div key={i} className="group bg-white p-12 rounded-[40px] border border-gray-100 hover:border-accent/20 hover:shadow-[0_32px_64px_-16px_rgba(200,169,110,0.1)] transition-all duration-500">
+        {/* Grid */}
+        <div className="grid md:grid-cols-2 gap-6">
 
-              {/* FIXED HERE: Changed service.icon to s.icon and removed the duplicate */}
-              <div className="text-5xl mb-10 group-hover:scale-110 group-hover:-rotate-12 transition-transform duration-500">
-                {s.icon}
+          {/* {services.map((item, i) => (
+            <a
+              key={i}
+              href={`https://wa.me/9111594782?text=${encodeURIComponent(item.message)}`}
+              target="_blank"
+              className="group border border-gray-100 rounded-2xl p-6 hover:shadow-md transition-all"
+            >
+              <div className="flex justify-between items-start">
+
+                <div>
+                  <h3 className="text-lg font-semibold text-primary mb-1">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm text-gray-500">
+                    {item.desc}
+                  </p>
+                </div>
+
+                <span className="text-primary opacity-40 group-hover:opacity-100 transition">
+                  →
+                </span>
+
               </div>
+            </a>
+          ))} */}
 
-              <h3 className="text-2xl font-heading mb-4 text-primary group-hover:text-accent transition-colors">
-                {s.title}
-              </h3>
+          {services.map((item, i) => {
+            const isPriority = item.title === "Tooth Pain";
 
-              <p className="text-gray-500 leading-relaxed text-sm mb-8">
-                {s.desc}
-              </p>
-
-              <Link
-                href={`/services#${s.title.toLowerCase().replace(' ', '-')}`}
-                className="text-xs font-bold uppercase tracking-widest text-primary flex items-center gap-2 group-hover:gap-4 transition-all"
+            return (
+              <a
+                key={i}
+                href={`https://wa.me/9111594782?text=${encodeURIComponent(item.message)}`}
+                target="_blank"
+                className={`group border rounded-2xl p-6 transition-all ${isPriority
+                    ? "border-primary/20 bg-primary/[0.03] shadow-sm"
+                    : "border-gray-100 hover:shadow-md"
+                  }`}
               >
-                Learn More <ArrowRight size={14} />
-              </Link>
-            </div>
-          ))}
+                <div className="flex justify-between items-start">
+
+                  <div>
+                    <h3 className="text-lg font-semibold text-primary mb-1">
+                      {item.title}
+                    </h3>
+
+                    <p className="text-sm text-gray-500">
+                      {item.desc}
+                    </p>
+
+                    {/* subtle urgency cue */}
+                    {isPriority && (
+                      <p className="text-xs text-primary mt-2 font-medium">
+                        Immediate attention recommended
+                      </p>
+                    )}
+                  </div>
+
+                  <span className="text-primary opacity-40 group-hover:opacity-100 transition">
+                    →
+                  </span>
+
+                </div>
+              </a>
+            );
+          })}
+
         </div>
+
+        {/* Secondary */}
+        <div className="mt-10 text-center">
+          <a
+            href="/services"
+            className="text-primary font-semibold underline underline-offset-4"
+          >
+            View All Services →
+          </a>
+        </div>
+
       </div>
     </section>
   );
