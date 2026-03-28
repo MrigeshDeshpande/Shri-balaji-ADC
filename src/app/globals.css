@@ -5,16 +5,26 @@
   --font-heading: var(--font-heading);
   --font-body: var(--font-body);
 
-  /* Premium Palette */
-  --color-primary: #1A5C6B;
+  --color-primary: #1B2F5E;
+  /* deep navy */
+  --color-primary-light: #142240;
+  /* navy hover state */
   --color-accent: #C8A96E;
-  --color-bg: #FAFAF8;
+  /* gold — unchanged */
+  --color-bg: #F8F9FB;
+  /* cool off-white, pairs with navy */
   --color-surface: #FFFFFF;
 }
 
 /* Global Reset for Headings */
 @layer base {
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-heading font-bold text-primary tracking-tight;
   }
 }
