@@ -33,7 +33,6 @@ export default function Hero() {
             Advanced dental care with modern technology and a gentle approach — so you feel confident at every step.
           </p>
 
-          {/* 🔥 OFFER (MISSING EARLIER) */}
           <div className="mb-8">
             <p className="text-lg font-bold text-accent">
               Free Consultation for First-Time Patients
@@ -43,10 +42,8 @@ export default function Hero() {
             </p>
           </div>
 
-          {/* 🔥 CTA STRUCTURE */}
           <div className="flex flex-col sm:flex-row gap-4 mb-5">
             
-            {/* PRIMARY - WHATSAPP */}
             <a 
               href="https://wa.me/9111594782?text=Hi%2C%20I%20found%20your%20clinic%20online.%20I%E2%80%99d%20like%20to%20know%20more%20about%20treatment%20and%20consultation."
               target="_blank"
