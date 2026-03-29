@@ -202,7 +202,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="tel:+9111594782"
+              href="tel:9111594782"
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',

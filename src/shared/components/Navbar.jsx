@@ -46,11 +46,11 @@ export default function Navbar() {
 
             {/* Call (secondary) */}
             <a
-              href="tel:+9111594782"
+              href="tel:9111594782"
               className="flex items-center gap-2 text-sm font-bold text-primary hover:underline"
             >
               <Phone size={16} />
-              <span>+91 91115 94782</span>
+              <span>9111594782</span>
             </a>
 
             {/* WhatsApp (primary) */}
@@ -103,7 +103,7 @@ export default function Navbar() {
               </a>
 
               <a 
-                href="tel:+9111594782"
+                href="tel:9111594782"
                 className="w-full bg-primary text-white text-center py-4 rounded-xl font-bold"
               >
                 📞 Call Now
