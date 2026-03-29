@@ -3,7 +3,7 @@
 const stats = [
   {
     label: "Happy Patients",
-    value: "5000+",
+    value: "500+",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6ecf9a" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
@@ -13,7 +13,7 @@ const stats = [
   },
   {
     label: "Years of Experience",
-    value: "10+",
+    value: "5+",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6ecf9a" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>

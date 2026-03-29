@@ -1,7 +1,7 @@
 export const team = [
   {
     name: "Dr. Vishnu Vardhan",        
-    image: "/doctor.jpg",      
+    image: "/image.png",      
     degree: "BDS, MDS",
     specialization: "Orthodontics & Implants",
     specializations: [                

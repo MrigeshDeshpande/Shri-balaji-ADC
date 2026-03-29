@@ -116,7 +116,7 @@ export default function TrustSection() {
                   color: 'rgba(255,255,255,0.4)', margin: 0, lineHeight: 1.4,
                   letterSpacing: '0.02em',
                 }}>
-                  Our clinic philosophy since 2005
+                  Our clinic philosophy since 2026
                 </p>
               </div>
 

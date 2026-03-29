@@ -65,9 +65,9 @@ export default function AboutHeroSection() {
         {/* Stats bar */}
         <div className="inline-flex divide-x divide-black/[0.08] border border-black/10 rounded-2xl overflow-hidden bg-white">
           {[
-            { num: "12+", label: "Years serving" },
+            { num: "5+", label: "Years serving" },
             { num: "4.9★", label: "Google rating" },
-            { num: "8k+", label: "Happy patients" },
+            { num: "500+", label: "Happy patients" },
           ].map(({ num, label }) => (
             <div key={label} className="px-8 py-4 text-center">
               <div className="font-heading text-[22px] font-bold text-[#1C1C1C]">{num}</div>
