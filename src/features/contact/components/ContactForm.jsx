@@ -277,7 +277,7 @@ export default function ContactForm() {
 
           <Field label="Phone Number *" error={errors.phone}>
             <input
-              name="phone" type="tel" placeholder="+91 98765 43210"
+              name="phone" type="tel" placeholder="9111594782"
               onChange={() => clear("phone")}
               onFocus={() => setFocused("phone")}
               onBlur={() => setFocused(null)}

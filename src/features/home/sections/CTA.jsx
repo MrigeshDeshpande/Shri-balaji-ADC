@@ -152,7 +152,7 @@ export default function CTASection() {
           </Link>
 
           <a
-            href="tel:+919876543210"
+            href="tel:9111594782"
             style={{
               display: 'inline-flex',
               alignItems: 'center',

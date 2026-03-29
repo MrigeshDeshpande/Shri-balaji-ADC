@@ -138,7 +138,7 @@ export default function Footer() {
 
       {/* WhatsApp Floating Button */}
       <a
-        href="https://wa.me/919876543210"
+        href="https://wa.me/9111594782"
         target="_blank"
         aria-label="Chat on WhatsApp"
         className="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-xl hover:scale-110 transition-transform z-50 flex items-center justify-center"
