@@ -53,7 +53,7 @@ export default function StorySection() {
           <p className="font-body text-[15px] text-gray-500 leading-[1.8] mb-8">
             Our commitment to{" "}
             <span className="font-semibold text-[#1C1C1C]">precision, hygiene, and ethical practices</span>{" "}
-            builds long-term trust with families across Agra.
+            builds long-term trust with families across Bhilai.
           </p>
 
           {/* Value pills */}

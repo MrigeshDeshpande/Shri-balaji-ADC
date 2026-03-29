@@ -58,7 +58,9 @@ export default function Footer() {
                   target="_blank"
                   className="hover:text-primary"
                 >
-                  123, Civil Lines, Agra, UP 282002
+                  Shri Balaji Advanced Dental Care & Implant Center
+                  Ground Floor, MIG-1/321, Hudco Colony, Hudco, Bhilai, Chhattisgarh 490006
+
                 </a>
               </li>
 
@@ -89,9 +91,8 @@ export default function Footer() {
             </button>
 
             <ul
-              className={`space-y-4 text-sm font-medium text-gray-500 ${
-                openLinks ? "block" : "hidden md:block"
-              }`}
+              className={`space-y-4 text-sm font-medium text-gray-500 ${openLinks ? "block" : "hidden md:block"
+                }`}
             >
               <li><Link href="/about">About Our Clinic</Link></li>
               <li><Link href="/services">Dental Services</Link></li>
@@ -111,9 +112,8 @@ export default function Footer() {
             </button>
 
             <ul
-              className={`space-y-4 text-sm font-medium text-gray-500 ${
-                openServices ? "block" : "hidden md:block"
-              }`}
+              className={`space-y-4 text-sm font-medium text-gray-500 ${openServices ? "block" : "hidden md:block"
+                }`}
             >
               <li><Link href="/services#root-canal">Root Canal Therapy</Link></li>
               <li><Link href="/services#implants">Dental Implants</Link></li>

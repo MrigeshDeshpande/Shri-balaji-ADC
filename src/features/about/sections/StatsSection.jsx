@@ -72,7 +72,7 @@ export default function StatsSection() {
           </div>
           <h2 className="font-heading font-extrabold text-[clamp(26px,4vw,38px)] tracking-tight leading-[1.1] text-white">
             Trusted by <span className="text-[#6ecf9a]">Thousands</span><br />
-            Across Agra
+            Across Bhilai
           </h2>
         </div>
 

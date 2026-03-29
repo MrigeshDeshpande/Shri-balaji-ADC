@@ -15,7 +15,7 @@ const REVIEWS = [
     author: "Rahul Verma",
     time: "1 month ago",
     stars: 5,
-    text: "Best clinic in Agra. Clean, professional, and no long wait times. Will definitely visit again.",
+    text: "Best clinic in Bhilai. Clean, professional, and no long wait times. Will definitely visit again.",
   },
   {
     author: "Sunita Gupta",

@@ -1,41 +1,44 @@
 import ServiceGrid from '@/features/services/components/ServiceGrid';
+import TrustSection from '@/features/services/components/TrustSection';
 
 export default function ServicesPage() {
   return (
-    <main className="bg-[#FAFAF8] min-h-screen">
-      {/* Page Header */}
-      <section className="pt-32 pb-24 px-6 bg-white border-b border-gray-100 text-center">
-        <div className="max-w-4xl mx-auto">
-          <span className="text-accent font-bold uppercase tracking-[0.3em] text-[10px] mb-6 block italic">
-            World-class Dentistry
-          </span>
-          <h1 className="text-6xl md:text-8xl font-heading mb-8">
-            Our Dental <br/>Specializations.
+    <main className="bg-bg-page min-h-screen">
+
+      {/* Page Header — LIGHT SECTION */}
+      <section className="py-20 md:py-28 bg-bg-light border-b border-border-light text-center">
+        <div className="max-w-3xl mx-auto px-6">
+
+          {/* Eyebrow */}
+          <div className="flex items-center justify-center gap-3 text-primary mb-6">
+            <span className="w-6 h-[1px] bg-primary" />
+            <span className="uppercase text-[11px] tracking-[0.1em] font-medium font-body">
+              World-class Dentistry
+            </span>
+          </div>
+
+          {/* Heading */}
+          <h1 className="font-heading font-extrabold text-4xl md:text-5xl tracking-tight text-text-heading mb-6">
+            Our Dental <span className="text-primary">Specializations</span>
           </h1>
-          <p className="text-gray-500 max-w-2xl mx-auto font-medium leading-relaxed">
-            We offer a comprehensive range of dental services using the latest 
-            painless technology in our state-of-the-art Agra clinic.
+
+          {/* Description */}
+          <p className="font-body font-light text-text-body leading-relaxed max-w-xl mx-auto">
+            We offer a comprehensive range of dental services using the latest
+            painless technology in our state-of-the-art clinic.
           </p>
+
         </div>
       </section>
 
-      {/* Grid Section */}
-      <section className="py-20 px-6 max-w-7xl mx-auto">
-        <ServiceGrid />
-      </section>
+   
+          <ServiceGrid />
+      
 
-      {/* Trust Quote / Bottom Section */}
-      <section className="pb-32 px-6 text-center">
-        <div className="max-w-2xl mx-auto p-12 bg-primary rounded-[48px] text-white">
-          <p className="text-xl font-medium italic opacity-90 mb-6">
-            "Your comfort is as important to us as your dental health. We ensure a zero-anxiety experience for every patient."
-          </p>
-          <div className="h-px w-12 bg-accent mx-auto mb-4" />
-          <span className="text-xs uppercase tracking-[0.2em] font-bold opacity-60">
-            Shri Balaji Standards
-          </span>
-        </div>
-      </section>
+
+      {/* Trust Section — LIGHT (not loud) */}
+      
+      <TrustSection />
     </main>
   );
 }
