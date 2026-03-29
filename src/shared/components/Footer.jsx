@@ -59,7 +59,7 @@ export default function Footer() {
                   className="hover:text-primary"
                 >
                   Shri Balaji Advanced Dental Care & Implant Center
-                  Ground Floor, MIG-1/321, Hudco Colony, Hudco, Bhilai, Chhattisgarh 490006
+                  Ground Floor, MIG-1/321, Hudco Colony, Hudco, Bhilai, Chhattisgarh 490009
 
                 </a>
               </li>
