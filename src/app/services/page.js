@@ -1,9 +1,34 @@
 import ServiceGrid from '@/features/services/components/ServiceGrid';
 import TrustSection from '@/features/services/components/TrustSection';
 
+export const metadata = {
+  title: 'Our Services',
+  description: 'Comprehensive dental services including Root Canal, Implants, Braces, and Cosmetic Dentistry at Shri Balaji Dental.',
+  openGraph: {
+    title: 'Dental Services | Shri Balaji Dental',
+    url: 'https://shribalajidental.com/services',
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Dental Services at Shri Balaji Dental",
+  "url": "https://shribalajidental.com/services",
+  "description": "Comprehensive dental services using the latest painless technology.",
+  "about": {
+    "@type": "MedicalSpecialty",
+    "name": "Dentistry"
+  }
+};
+
 export default function ServicesPage() {
   return (
     <main className="bg-bg-page min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
 
       {/* Page Header — LIGHT SECTION */}
       <section className="py-20 md:py-28 bg-bg-light border-b border-border-light text-center">
