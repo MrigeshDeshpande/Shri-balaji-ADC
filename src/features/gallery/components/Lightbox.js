@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 export default function Lightbox({ images, index, onClose, setIndex }) {
   if (index === null) return null;
 
@@ -19,8 +21,12 @@ export default function Lightbox({ images, index, onClose, setIndex }) {
         ‹
       </button>
 
-      <img
+      <Image
         src={images[index].src}
+        alt={`Enlarged gallery view of ${images[index].category || 'dental procedure'}`}
+        width={1200}
+        height={800}
+        loading="lazy"
         className="max-h-[80vh] rounded"
       />
 

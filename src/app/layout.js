@@ -16,6 +16,10 @@ const bodyFont = Plus_Jakarta_Sans({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://shribalajidental.com'),
+  alternates: {
+    canonical: '/',
+  },
   title: {
     template: '%s | Shri Balaji Dental',
     default: 'Shri Balaji Dental | Advanced & Painless Dentistry',

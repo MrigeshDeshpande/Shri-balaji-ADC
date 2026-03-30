@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { images, categories } from "../data/images";
 import Lightbox from "../components/Lightbox";
 
@@ -33,12 +34,15 @@ export default function GalleryGridSection() {
       {/* Grid */}
       <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-4">
         {filtered.map((img, i) => (
-          <img
-            key={i}
-            src={img.src}
-            onClick={() => setIndex(i)}
-            className="w-full h-60 object-cover rounded cursor-pointer"
-          />
+          <div key={i} className="relative w-full h-60 cursor-pointer" onClick={() => setIndex(i)}>
+            <Image
+              src={img.src}
+              alt={`Gallery image of ${img.category} dental procedure`}
+              fill
+              sizes="(max-width: 768px) 50vw, 33vw"
+              className="object-cover rounded"
+            />
+          </div>
         ))}
       </div>
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 const cases = [
   {
@@ -24,8 +25,12 @@ function Comparison({ before, after, title }) {
 
       <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden rounded-lg">
         {/* After image */}
-        <img
+        <Image
           src={after}
+          alt={`After ${title} treatment`}
+          width={800}
+          height={500}
+          loading="lazy"
           className="absolute inset-0 w-full h-full object-cover"
         />
 
@@ -34,9 +39,14 @@ function Comparison({ before, after, title }) {
           className="absolute inset-0 overflow-hidden"
           style={{ width: `${slider}%` }}
         >
-          <img
+          <Image
             src={before}
-            className="w-full h-full object-cover"
+            alt={`Before ${title} treatment`}
+            width={800}
+            height={500}
+            loading="lazy"
+            className="h-full object-cover max-w-none"
+            style={{ width: 'calc(100vw - 2rem)', maxWidth: '1152px' }} /* rough clamp for the grid */
           />
         </div>
 

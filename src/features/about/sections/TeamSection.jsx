@@ -1,5 +1,6 @@
 // features/about/sections/TeamSection.tsx
 import { team } from "../data/team";
+import Image from "next/image";
 
 export default function TeamSection() {
   const doc = team[0];
@@ -27,10 +28,12 @@ export default function TeamSection() {
 
         {/* Photo */}
         <div className="relative bg-[#f8f5f0] min-h-[300px] md:min-h-0">
-          <img
+          <Image
             src={doc.image}
-            alt={doc.name}
-            className="w-full h-full object-cover object-top absolute inset-0"
+            alt={`Portrait of ${doc.name}, ${doc.specialization}`}
+            fill
+            sizes="(max-width: 768px) 100vw, 300px"
+            className="object-cover object-top"
           />
         </div>
 
