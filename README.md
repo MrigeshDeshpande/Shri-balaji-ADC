@@ -9,7 +9,7 @@ First, run the development server:
 npm run dev
 # or
 yarn dev
-# or
+# o
 pnpm dev
 # o
 bun dev
